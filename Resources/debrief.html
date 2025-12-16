@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    form{
+      width: 50em;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #cacfd2;
+      padding: 0% 2% 2% 2%;
+      box-shadow: 4px 4px 2px #cacfd2;
+      border-radius: 1em;
+	  font-family: arial, sans-serif;
+    }
+    #responseTypes{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #responseTypes td{
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    p{
+      clear: both;
+    }
+    #header{
+      margin: 2em;
+      overflow: auto;
+    }
+    table td{
+      padding-bottom: 1em;
+    }
+  </style>
+
+</head>
+
+<form>
+  <h1>Post-experiment Questionnaire</h1>
+  <p>
+    You are almost done! Before you finish, please answer the following questions about your experience in the experiment and then click to the next page. 
+    <br> <br>
+    <b> In order to receive credit, you must progress to the next page. </b> If you close out of the experiment now, we might not be able to give you credit.
+  </p>
+    <tr>
+      <td colspan="2">
+        Did anything stand out to you about the sentences you were reading? Did you notice any patterns? 
+      </td>
+    </tr>
+  <br>
+    <tr>
+      <td colspan="2">
+        <textarea name="commentsPattern"  class="obligatory"  rows="3" cols="80"></textarea>
+      </td>
+    </tr>
+  <br> <br>
+  <tr>
+  <td colspan="1">How often did you read the sentences carefully? Your response will not affect your credit.</td>
+  <td colspan="1">
+    <select name="" class="obligatory">
+      <option value="commentsCareful">--</option>
+      <option value="most">For most of the sentences</option>
+      <option value="some">For some of the sentences</option>
+      <option value="few">For few of the sentences</option>
+      <option value="none">For none of the sentences</option>
+    </select>
+  </td>
+</tr>
+    <br>
+    <br>
+      <tr>
+      <td colspan="2">
+        What, if anything, did you find to be easy when taking this experiment?
+      </td>
+    </tr>
+  <br>
+    <tr>
+      <td colspan="2">
+        <textarea name="commentsEasy"  class="obligatory"  rows="3" cols="80"></textarea>
+      </td>
+    </tr>
+    <br>
+  <br>
+      <tr>
+      <td colspan="2">
+        What, if anything, did you find to be difficult when taking this experiment?
+      </td>
+    </tr>
+  <br>
+    <tr>
+      <td colspan="2">
+        <textarea name="commentsHard"  class="obligatory"  rows="3" cols="80"></textarea>
+      </td>
+    </tr>
+  <br>
+  <br>
+      <tr>
+      <td colspan="2">
+        Did you notice yourself using any strategies as you were going through the sentences? If so, at what point in the experiment did you notice that you were using them?
+      </td>
+    </tr>
+  <br>
+    <tr>
+      <td colspan="2">
+        <textarea name="commentsStrategy"  class="obligatory" rows="3" cols="80"></textarea>
+      </td>
+    </tr>
+    <br>
+  <br>
+      <tr>
+      <td colspan="2">
+        Any other comments about the experiment?
+      </td>
+    </tr>
+  <br>
+    <tr>
+      <td colspan="2">
+        <textarea name="commentsGeneral"  class="obligatory" rows="3" cols="80"></textarea>
+      </td>
+    </tr>
+  <br>
+  <br>
+  <tr>
+  <td colspan="1">What device did you use to complete the experiment?</td>
+  <td colspan="1">
+    <select name="comp" class="obligatory">
+      <option value="">--</option>
+      <option value="PC-Apple">PC, Apple OS</option>
+      <option value="PC-Linuz">PC, Unix/Linux OS</option>
+      <option value="PC-Windows">PC, Windows/Microsoft OS</option>
+      <option value="PC-Other">PC, Other OS</option>
+      <option value="Other">Other</option>
+    </select>
+  </td>
+</tr>
+  <br>
+  <p>
+    <b> Thank you for your comments! Click to the next page to send your results to the server so that you can recieve credit for participating. </b>
+    </p>
+  <p>
+    If you have any additional questions, comments, or concerns about the study, please feel free to contact the research team: < Name >, < Institution > -- name@institution.edu.
+  </p>
+</form>
+</html>

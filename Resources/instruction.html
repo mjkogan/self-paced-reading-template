@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    form{
+      width: 50em;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #cacfd2;
+      padding: 0% 2% 2% 2%;
+      box-shadow: 4px 4px 2px #cacfd2;
+      border-radius: 1em;
+	  font-family: arial, sans-serif;
+    }
+    #responseTypes{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #responseTypes td{
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    p{
+      clear: both;
+    }
+    #header{
+      margin: 2em;
+      overflow: auto;
+    }
+    table td{
+      padding: 10px;
+  	  border:1px solid black;
+  	  border-radius:10px;
+    }
+	label{
+		font-weight:normal
+	}
+  </style>
+
+</head>
+
+<form>
+ 
+ <h2>How to Read (in this experiment)</h2>
+ <p>
+ 	In this experiment, you'll be reading English sentences one word at a time. <br><br> At the start of each trial, you will see a series of dashes. To present the sentence, press the space bar to reveal each word one at a time. Try to read at a natural pace and don't rush. This will seem a bit confusing at first, but you should get familiar with the task fairly quickly.<br><br>
+	<center><img style="width: 55%;" src="spr.png"></center>
+
+	
+	<center><table>
+		<td>
+		<h3>Confirm your understanding</h3>
+		<p> <b>1. How fast should you read?</b><br>
+			<input type="radio" id="fast" name = "q1" value="no" class="obligatory" onchange="checkAnswer()">
+			<label for="fast">As fast as you can!</label><br>
+			<input type="radio" id="natural" name = "q1" value="yes" class="obligatory" onchange="checkAnswer()">
+			<label for="natural">At a natural and comfortable pace</label><br>
+			<p id="demo1"></p>
+			<label class="error" for="q1"></label>
+		</p>
+		<p> <b>2. How do you start a sentence?</b><br>
+			<input type="radio" id="automatic" name = "q2" value = "no" class="obligatory" onchange="checkAnswer()">
+			<label for="automatic">It will start automatically</label><br>
+			<input type="radio" id="space-bar" name = "q2" value = "yes" class="obligatory" onchange="checkAnswer()">
+			<label for="space-bar">Press the space bar</label><br>
+			<p id="demo2"></p>
+			<label class="error" for="q2"></label>
+		</p>
+	</td>
+	</table></center>
+ </p>
+ 
+ <script>
+	 
+	 function checkAnswer() {
+
+		 var q1 = document.querySelector("input[name='q1']:checked").value;
+		 if (q1 == "yes"){
+		 	document.getElementById("demo1").innerText="Correct";
+		 }
+		 if (q1 == "no"){
+		 	document.getElementById("demo1").innerText="Incorrect. Please review your answer.";
+			var answers = document.getElementsByName("q1");
+			for(var i=0;i<answers.length;i++)
+			    answers[i].checked = false;
+		 }
+		 var q2 = document.querySelector("input[name='q2']:checked").value;
+		 if (q2 == "yes"){
+		 	document.getElementById("demo2").innerText="Correct";
+		 }
+		 if (q2 == "no"){
+		 	document.getElementById("demo2").innerText="Incorrect. Please review your answer.";
+			var answers = document.getElementsByName("q2");
+			for(var i=0;i<answers.length;i++)
+			    answers[i].checked = false;
+		 }
+
+	 	
+	 }
+	 
+</script>
+
+</form>
+
+</html>

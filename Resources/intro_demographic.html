@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    form{
+      width: 50em;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #cacfd2;
+      padding: 0% 2% 2% 2%;
+      box-shadow: 4px 4px 2px #cacfd2;
+      border-radius: 1em;
+	  font-family: arial, sans-serif;
+    }
+    #responseTypes{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #responseTypes td{
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    p{
+      clear: both;
+    }
+    #header{
+      margin: 2em;
+      overflow: auto;
+    }
+    table td{
+      padding-bottom: 1em;
+    }
+  </style>
+
+</head>
+
+<form>
+  <h1>Demographic Survey</h1>
+  <p>Before we get started on the study, please answer the following questions about your background. Please respond accurately. Your responses on this survey, or in the study itself, will not affect your compensation.</p>
+  <table>
+    
+	<p>
+       <b>1. What is your age in years?</b>
+	   <textarea name="ageResponse" class="obligatory" rows="1" cols="3"></textarea>
+      </p>
+      
+      
+      <p>
+        <b>2. Which of the following statements most accurately captures your experience using English?</b>
+      </td>
+	  <td colspan="1">
+	    <select name="" class="obligatory">
+			<option value="default">--</option>
+	      <option value="native">English is the only language I speak natively.</option>
+	      <option value="bilingual">I am bilingual/multilingual in English and another language (or other languages). I grew up hearing and using both as a child.</option>
+	      <option value="elementary-school">I started learning English in elementary/primary school.</option>
+	      <option value="high-school">I started learning English in high school, college, or later in life.</option>
+		  <option value="none">None of these apply.</option>
+	    </select>
+	  </p>
+
+   
+    <p>
+        <b>3. If applicable, what other languages do you use, and in what contexts (e.g., at school, at home)? Write N/A if not applicable.</b>
+		<br>
+        <textarea name="otherLangNat" class="obligatory" rows="5" cols="40"></textarea>
+      </p>
+	  
+	<p>
+
+        <b>4. Anything else you'd like to note?<b> Please elaborate here if you answered "None of these apply" to Question 2.
+<br>
+        <textarea name="otherComments" class="obligatory" rows="5" cols="40"></textarea>
+      
+  </table>
+
+</form>
+</html>

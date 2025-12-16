@@ -1,0 +1,17 @@
+item,group,condition,dist_num,gram,sentence
+1,A,a,Sg,Gram,The slogan on the poster unsurprisingly was designed to get attention.
+1,B,b,Pl,Gram,The slogan on the posters unsurprisingly was designed to get attention.
+1,C,c,Sg,Ungram,The slogan on the poster unsurprisingly were designed to get attention.
+1,D,d,Pl,Ungram,The slogan on the posters unsurprisingly were designed to get attention.
+2,B,a,Sg,Gram,The picture on the flier definitely was of a village in France.
+2,C,b,Pl,Gram,The picture on the fliers definitely was of a village in France.
+2,D,c,Sg,Ungram,The picture on the flier definitely were of a village in France.
+2,A,d,Pl,Ungram,The picture on the fliers definitely were of a village in France.
+3,C,a,Sg,Gram,The label on the container probably was a warning about the chemicals inside.
+3,D,b,Pl,Gram,The label on the containers probably was a warning about the chemicals inside.
+3,A,c,Sg,Ungram,The label on the container probably were a warning about the chemicals inside.
+3,B,d,Pl,Ungram,The label on the containers probably were a warning about the chemicals inside.
+4,D,a,Sg,Gram,The name on the billboard likely was of a prominent local businessman.
+4,A,b,Pl,Gram,The name on the billboards likely was of a prominent local businessman.
+4,B,c,Sg,Ungram,The name on the billboard likely were of a prominent local businessman.
+4,C,d,Pl,Ungram,The name on the billboards likely were of a prominent local businessman.

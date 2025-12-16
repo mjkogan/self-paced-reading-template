@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style>
+    form{
+      width: 50em;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #cacfd2;
+      padding: 0% 2% 2% 2%;
+      box-shadow: 4px 4px 2px #cacfd2;
+      border-radius: 1em;
+	  font-family: arial, sans-serif;
+    }
+    #responseTypes{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #responseTypes td{
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+    p{
+      clear: both;
+    }
+    #header{
+      margin: 2em;
+      overflow: auto;
+    }
+    table td{
+      padding: 10px;
+	  border:1px solid black;
+	  border-radius:10px;
+    }
+  </style>
+
+</head>
+
+<form>
+
+  <p>
+    <h1>Welcome!</h1>
+
+You are invited to take part in a research study conducted by < Name >, a < Department > student at the < Institution >. Before you decide whether or not to participate in the study, you should read the information below. 
+	<br>
+    <h2>Request for Consent</h2>
+    <td colspan="2">
+      <input type="checkbox" class="obligatory" name="consent" id="exptConsent"/>I understand the information given below, and I voluntarily agree to participate in the research described 
+	  <label class="error" for="consent"></label>
+    </td>
+	<br>
+  </p>
+  
+  <p>
+    <b>Please enter your Participant ID:</b>
+	<textarea name="ID" class="obligatory" rows="1" cols="24"></textarea><label class="error" for="ID"></label>
+  </p>
+	
+ <table> 
+	<td> 
+  <p>
+    <b>Purpose.</b>
+	The purpose of this study is to learn about the relationship between language and other cognitive abilities.
+  </p>
+  <p>
+  	<b>What will happen.</b> If you decide to take part in this study, you will be asked to: <br><br> &emsp;&emsp;1. Answer questions about your age and language experience <br> &emsp;&emsp;2. Read sentences one word at a time and answer questions about them. <br><br> It is expected that your participation will take around 30 minutes.
+  </p>
+  <p>
+  	<b>Risks or Discomfort.</b> There are no anticipated risks in this study.
+  </p>
+    <p>
+  <b>Benefits.</b>
+    Although you will receive no direct benefits for your participation in this study, it may improve your understanding of how knowledge is discovered in linguistics and psychology, and further help the investigators better understand how individuals comprehend language.
+  </p>
+  
+  <p>
+  	<b>Confidentiality.</b> Confidentiality of your research records will be strictly maintained. Response data may be deposited in a public data repository in aggregate form. Your data files will be referenced only be a code number. No records will be kept that are linked to your personal identity. If you wish, you may request that your responses be destroyed or not used.
+  </p>
+  <p>
+  	<b>Decision to quit.</b> The decision to take part in this study is completely voluntary. You do not have to participate. Even if you decide at first to take part, you are free to change your mind at any time and quit the study. However, you will receive compensation only if you complete the study.
+  </p>
+  <p>
+  	<b>Rights and Complaints</b> If you have questions about this research, please contact <a href="name@institution.edu">name@institution.edu</a>. If you have any questions regarding your rights as a research participant, please contact the <a href="https://officeofresearch.ucsc.edu/compliance/contact-us.php">Office of Research Compliance Administration</a> at the < Institution >.
+  </p>
+</td>
+</table>
+</form>
+</html>
